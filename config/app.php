@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Facad;
+use Illuminate\Support\Facades\Facade;
 
 return [
 
