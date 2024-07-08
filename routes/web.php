@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::post('login', [LoginController::class,'login'])->name('login');
+Route::post('login', [LoginController::class, 'login'])->name('login');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('dashboard', [LoginController::class, 'dashboard'])->name('dashboard');
+});
