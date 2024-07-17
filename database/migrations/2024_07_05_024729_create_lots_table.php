@@ -28,9 +28,9 @@ return new class extends Migration
             $table->decimal('weight', 10, 2);
             $table->string('driver')->nullable();
             $table->date('eta_date')->nullable();
-            $table->time('eta_time')->nullable();
+            $table->date('eta_time')->nullable();
             $table->date('arrival_date')->nullable();
-            $table->time('arrival_time')->nullable();
+            $table->date('arrival_time')->nullable();
             $table->string('consignee');
             $table->string('product');
             $table->string('url');
