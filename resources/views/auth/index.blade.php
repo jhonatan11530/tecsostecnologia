@@ -9,13 +9,13 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
     <title>Login</title>
-    <link rel="icon" type="image/png" href="{{ asset('public/image/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('image/favicon.png') }}" />
 
     <!-- CSS Assets -->
-    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 
     <!-- Javascript Assets -->
-    <script src="{{ asset('public/js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
