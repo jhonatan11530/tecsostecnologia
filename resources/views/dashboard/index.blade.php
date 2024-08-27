@@ -583,75 +583,29 @@
                         <table id="example" class="display" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Inspection Date</th>
                                     <th>Lot No</th>
+                                    <th>Customer</th>
                                     <th>AWB</th>
                                     <th>Carrier</th>
-                                    <th>Supplier</th>
-                                    <th>Production Date</th>
-                                    <th>ETA</th>
-                                    <th>Total Boxes</th>
-                                    <th>Lbs</th>
-                                    <th>Box Qty Inspected</th>
-                                    <th>Pcs Qty Inspected</th>
-                                    <th>Temp Min</th>
-                                    <th>Temp Max</th>
-                                    <th>Temp Avg</th>
-                                    <th>Odor SL Off</th>
-                                    <th>Odor SL Fish</th>
-                                    <th>Odor Fishy</th>
-                                    <th>Odor Off</th>
-                                    <th>Acceptable Color</th>
-                                    <th>Unacceptable Color</th>
-                                    <th>Minimum Gapping</th>
-                                    <th>Maximum Gapping</th>
-                                    <th>Some Fat Line</th>
-                                    <th>Severe Fat Line</th>
-                                    <th>Blod Spot</th>
-                                    <th>Black Spot</th>
-                                    <th>Scales</th>
-                                    <th>Bones</th>
-                                    <th>Pale Gills</th>
-                                    <th>Frosting</th>
-                                    <th>Opaque Skin</th>
-                                    <th>Other Comments</th>
+                                    <th>Broker</th>
+                                    <th>Re Gel</th>
+                                    <th>Re Ice</th>
+                                    <th>Broken</th>
+                                    <th>Inspection Date</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($lots as $lot)
                                     <tr>
-                                        <td>{{ $lot->Inspection_Date }}</td>
                                         <td>{{ $lot->Lot_No }}</td>
+                                        <td>{{ $lot->name }}</td>
                                         <td>{{ $lot->AWB }}</td>
                                         <td>{{ $lot->Carrier }}</td>
                                         <td>{{ $lot->Supplier }}</td>
                                         <td>{{ $lot->Production_Date }}</td>
                                         <td>{{ $lot->ETA }}</td>
                                         <td>{{ $lot->Total_Boxes }}</td>
-                                        <td>{{ $lot->Lbs }}</td>
-                                        <td>{{ $lot->Box_Qty_Inspected }}</td>
-                                        <td>{{ $lot->Pcs_Qty_Inspected }}</td>
-                                        <td>{{ $lot->Temp_Min }}</td>
-                                        <td>{{ $lot->Temp_Max }}</td>
-                                        <td>{{ $lot->Temp_Avg }}</td>
-                                        <td>{{ $lot->Odor_SL_Off }}</td>
-                                        <td>{{ $lot->Odor_SL_Fish }}</td>
-                                        <td>{{ $lot->Odor_Fishy }}</td>
-                                        <td>{{ $lot->Odor_Off }}</td>
-                                        <td>{{ $lot->Acceptable_Color }}</td>
-                                        <td>{{ $lot->Unacceptable_Color }}</td>
-                                        <td>{{ $lot->Minimum_Gapping  }}</td>
-                                        <td>{{ $lot->Maximum_Gapping }}</td>
-                                        <td>{{ $lot->Some_Fat_Line }}</td>
-                                        <td>{{ $lot->Severe_Fat_Line }}</td>
-                                        <td>{{ $lot->Blod_Spot }}</td>
-                                        <td>{{ $lot->Black_Spot }}</td>
-                                        <td>{{ $lot->Scales }}</td>
-                                        <td>{{ $lot->Bones }}</td>
-                                        <td>{{ $lot->Pale_Gills }}</td>
-                                        <td>{{ $lot->Frosting }}</td>
-                                        <td>{{ $lot->Opaque_Skin }}</td>
-                                        <td>{{ $lot->Other_Comments }}</td>
+                                        <td>{{ $lot->Inspection_Date }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
