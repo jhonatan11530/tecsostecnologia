@@ -620,45 +620,38 @@
                             <tbody>
                                 @foreach ($lots as $lot)
                                     <tr>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>{{ $lot->id }}</td>
-                                        <td>
-                                            <a href="#">
-                                                <i class="fas fa-download" style="font-size:24px"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fas fa-eye" style="font-size:24px"></i>
-                                            </a>
-                                        </td>
+                                        <td>{{ $lot->Inspection_Date }}</td>
+                                        <td>{{ $lot->Lot_No }}</td>
+                                        <td>{{ $lot->AWB }}</td>
+                                        <td>{{ $lot->Carrier }}</td>
+                                        <td>{{ $lot->Supplier }}</td>
+                                        <td>{{ $lot->Production_Date }}</td>
+                                        <td>{{ $lot->ETA }}</td>
+                                        <td>{{ $lot->Total_Boxes }}</td>
+                                        <td>{{ $lot->Lbs }}</td>
+                                        <td>{{ $lot->Box_Qty_Inspected }}</td>
+                                        <td>{{ $lot->Pcs_Qty_Inspected }}</td>
+                                        <td>{{ $lot->Temp_Min }}</td>
+                                        <td>{{ $lot->Temp_Max }}</td>
+                                        <td>{{ $lot->Temp_Avg }}</td>
+                                        <td>{{ $lot->Odor_SL_Off }}</td>
+                                        <td>{{ $lot->Odor_SL_Fish }}</td>
+                                        <td>{{ $lot->Odor_Fishy }}</td>
+                                        <td>{{ $lot->Odor_Off }}</td>
+                                        <td>{{ $lot->Acceptable_Color }}</td>
+                                        <td>{{ $lot->Unacceptable_Color }}</td>
+                                        <td>{{ $lot->Minimum_Gapping  }}</td>
+                                        <td>{{ $lot->Maximum_Gapping }}</td>
+                                        <td>{{ $lot->Some_Fat_Line }}</td>
+                                        <td>{{ $lot->Severe_Fat_Line }}</td>
+                                        <td>{{ $lot->Blod_Spot }}</td>
+                                        <td>{{ $lot->Black_Spot }}</td>
+                                        <td>{{ $lot->Scales }}</td>
+                                        <td>{{ $lot->Bones }}</td>
+                                        <td>{{ $lot->Pale_Gills }}</td>
+                                        <td>{{ $lot->Frosting }}</td>
+                                        <td>{{ $lot->Opaque_Skin }}</td>
+                                        <td>{{ $lot->Other_Comments }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
