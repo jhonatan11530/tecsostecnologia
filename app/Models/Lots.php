@@ -9,5 +9,5 @@ class Lots extends Model
 {
     use HasFactory;
 
-    protected $table = "lots";
+    protected $table = "INSPECTIONS";
 }
