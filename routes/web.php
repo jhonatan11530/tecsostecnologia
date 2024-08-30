@@ -15,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('login',function () {
+    return redirect('/');
+});
+
 Route::get('/', [LoginController::class, 'index']);
+
 
 Route::post('login', [LoginController::class, 'login'])->name('login');
 
