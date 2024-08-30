@@ -9,7 +9,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
     <title>Login</title>
-    <link rel="icon" type="image/png" href="{{ asset('image/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('image/favicon.ico') }}" />
 
     <!-- CSS Assets -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
@@ -40,6 +40,7 @@
         <main class="grid w-full grow grid-cols-1 place-items-center">
             <div class="w-full max-w-[26rem] p-4 sm:px-5">
                 <div class="text-center">
+                    <img loading="lazy" class="mx-auto size-16" src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo"/>
                     <div class="mt-4">
                         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
                             Bienvenido de nuevo
