@@ -17,6 +17,7 @@
                             <th>Re Ice</th>
                             <th>Broken</th>
                             <th>Inspection Date</th>
+                            <th>Url</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +32,11 @@
                                 <td>{{ $lot->ETA }}</td>
                                 <td>{{ $lot->Total_Boxes }}</td>
                                 <td>{{ $lot->Inspection_Date }}</td>
+                                <td>
+                                    <a href="{{ $lot->url }}" target="_blank">
+                                        <i class="fas fa-download" style="font-size:24px"></i>
+                                    </a>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>

@@ -37,10 +37,30 @@
 
     <!-- Page Wrapper -->
     <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
-        <main class="grid w-full grow grid-cols-1 place-items-center">
-            <div class="w-full max-w-[26rem] p-4 sm:px-5">
+        <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
+            <a href="#" class="flex items-center space-x-2">
+                <img class="size-12" src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo" />
+                <p
+                class="text-xl font-semibold uppercase text-slate-700 dark:text-navy-100"
+              >
+                Quality Inspections
+              </p>
+            </a>
+        </div>
+        <div class="hidden w-full place-items-center lg:grid">
+            <div class="w-full max-w-lg p-6">
+                <img class="w-full"
+                    src="{{ asset('image/dashboard-check.svg') }}" alt="image" />
+            </div>
+        </div>
+        <main class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md">
+            <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
                 <div class="text-center">
-                    <img loading="lazy" class="mx-auto size-16" src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo"/>
+                    <img loading="lazy"
+                    class="mx-auto size-16 lg:hidden"
+                    src="{{ asset('image/Logotipo QIU Grande.png') }}"
+                    alt="logo"
+                  />
                     <div class="mt-4">
                         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
                             Bienvenido de nuevo
@@ -58,59 +78,56 @@
                 @endif
                 <form action="{{ url('login') }}" method="post">
                     @csrf
-                    <div class="card mt-5 rounded-lg p-5 lg:p-7">
-                        <label class="block">
-                            <span>Username o Email:</span>
-                            <span class="relative mt-1.5 flex">
-                                <input
-                                    class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                    placeholder="Enter Username" type="email" name="email" />
-                                <span
-                                    class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="size-5 transition-colors duration-200" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                </span>
+                    <div class="mt-16">
+                        <label class="relative flex">
+                            <input
+                                class="form-input peer w-full rounded-lg bg-slate-150 px-3 py-2 pl-9 ring-primary/50 placeholder:text-slate-400 hover:bg-slate-200 focus:ring dark:bg-navy-900/90 dark:ring-accent/50 dark:placeholder:text-navy-300 dark:hover:bg-navy-900 dark:focus:bg-navy-900"
+                                placeholder="Ingrese Username" type="text" name="email" />
+                            <span
+                                class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 transition-colors duration-200"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
                             </span>
                         </label>
-                        <label class="mt-4 block">
-                            <span>Contraseña:</span>
-                            <span class="relative mt-1.5 flex">
-                                <input
-                                    class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                                    placeholder="Enter Password" type="password" name="password" />
-                                <span
-                                    class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="size-5 transition-colors duration-200" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                    </svg>
-                                </span>
+                        <label class="relative mt-4 flex">
+                            <input
+                                class="form-input peer w-full rounded-lg bg-slate-150 px-3 py-2 pl-9 ring-primary/50 placeholder:text-slate-400 hover:bg-slate-200 focus:ring dark:bg-navy-900/90 dark:ring-accent/50 dark:placeholder:text-navy-300 dark:hover:bg-navy-900 dark:focus:bg-navy-900"
+                                placeholder="Ingrese Contraseña" type="password" name="password" />
+                            <span
+                                class="pointer-events-none absolute flex h-full w-10 items-center justify-center text-slate-400 peer-focus:text-primary dark:text-navy-300 dark:peer-focus:text-accent">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 transition-colors duration-200"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
                             </span>
                         </label>
                         <div class="mt-4 flex items-center justify-between space-x-2">
                             <label class="inline-flex items-center space-x-2">
                                 <input
-                                    class="form-checkbox is-basic size-5 rounded border-slate-400/70 checked:border-primary checked:bg-primary hover:border-primary focus:border-primary dark:border-navy-400 dark:checked:border-accent dark:checked:bg-accent dark:hover:border-accent dark:focus:border-accent"
+                                    class="form-checkbox is-outline size-5 rounded border-slate-400/70 bg-slate-100 before:bg-primary checked:border-primary hover:border-primary focus:border-primary dark:border-navy-500 dark:bg-navy-900 dark:before:bg-accent dark:checked:border-accent dark:hover:border-accent dark:focus:border-accent"
                                     type="checkbox" name="remember" />
                                 <span class="line-clamp-1">Recordarme</span>
                             </label>
                             <a href="#"
-                                class="text-xs text-slate-400 transition-colors line-clamp-1 hover:text-slate-800 focus:text-slate-800 dark:text-navy-300 dark:hover:text-navy-100 dark:focus:text-navy-100">¿Recuperar
-                                contraseña?</a>
+                                class="text-xs text-slate-400 transition-colors line-clamp-1 hover:text-slate-800 focus:text-slate-800 dark:text-navy-300 dark:hover:text-navy-100 dark:focus:text-navy-100">Forgot
+                                Password?</a>
                         </div>
                         <button
-                            class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
+                            class="btn mt-10 h-10 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"
                             type="submit">
                             Iniciar sesión
                         </button>
                     </div>
                 </form>
+            </div>
+            <div class="my-5 flex justify-center text-xs text-slate-400 dark:text-navy-300">
+                <a href="#">Privacy Notice</a>
+                <div class="mx-3 my-1 w-px bg-slate-200 dark:bg-navy-500"></div>
+                <a href="#">Term of service</a>
             </div>
         </main>
     </div>
