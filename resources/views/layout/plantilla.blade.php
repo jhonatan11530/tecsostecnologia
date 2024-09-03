@@ -39,7 +39,7 @@
                     class="flex h-full w-full flex-col items-center border-r border-slate-150 bg-white dark:border-navy-700 dark:bg-navy-800">
                     <!-- Application Logo -->
                     <div class="flex pt-4">
-                        <a href="/">
+                        <a href="{{ url('dashboard') }}">
                             <img loading="lazy"
                                 class="size-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]"
                                 src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo" />
@@ -48,7 +48,7 @@
 
                     <!-- Main Sections Links -->
                     <div class="is-scrollbar-hidden flex grow flex-col space-y-4 overflow-y-auto pt-6">
-                        <!-- Dashobards -->
+                        <!-- Dashobards
                         <a href="{{ url('dashboard') }}"
                             class="flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary outline-none transition-colors duration-200 hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-navy-600 dark:text-accent-light dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90"
                             x-tooltip.placement.right="'Dashboards'">
@@ -62,13 +62,13 @@
                                 <path fill="currentColor"
                                     d="M17.5 5h-1a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5Z" />
                             </svg>
-                        </a>
+                        </a>-->
 
                     </div>
 
                     <!-- Bottom Links -->
                     <div class="flex flex-col items-center space-y-3 py-3">
-                        <!-- Settings -->
+                        <!-- Settings
                         <a href="#"
                             class="flex size-11 items-center justify-center rounded-lg outline-none transition-colors duration-200 hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                             <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
                                 <path fill="currentColor"
                                     d="M11.995 15.332c1.794 0 3.248-1.464 3.248-3.27 0-1.807-1.454-3.272-3.248-3.272-1.794 0-3.248 1.465-3.248 3.271 0 1.807 1.454 3.271 3.248 3.271Z" />
                             </svg>
-                        </a>
+                        </a>-->
 
                         <!-- Profile -->
                         <div x-data="usePopper({ placement: 'right-end', offset: 12 })" @click.outside="isShowPopper && (isShowPopper = false)"
@@ -105,6 +105,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col pt-2 pb-5">
+                                        <!---
                                         <a href="#"
                                             class="group flex items-center space-x-3 py-2 px-4 tracking-wide outline-none transition-all hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600">
                                             <div
@@ -214,7 +215,7 @@
                                                     Webapp settings
                                                 </div>
                                             </div>
-                                        </a>
+                                        </a>---->
                                         <div class="mt-3 px-4">
                                             <a href="{{ url('logout') }}"
                                                 class="btn h-9 w-full space-x-2 bg-primary text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
