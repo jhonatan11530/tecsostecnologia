@@ -13,9 +13,7 @@
                             <th>AWB</th>
                             <th>Carrier</th>
                             <th>Broker</th>
-                            <th>Re Gel</th>
-                            <th>Re Ice</th>
-                            <th>Broken</th>
+                            <th>Country</th>
                             <th>Inspection Date</th>
                             <th>Url</th>
                         </tr>
@@ -28,9 +26,7 @@
                                 <td>{{ $lot->AWB }}</td>
                                 <td>{{ $lot->Carrier }}</td>
                                 <td>{{ $lot->Supplier }}</td>
-                                <td>{{ $lot->Production_Date }}</td>
-                                <td>{{ $lot->ETA }}</td>
-                                <td>{{ $lot->Total_Boxes }}</td>
+                                <td>{{ $lot->country }}</td>
                                 <td>{{ $lot->Inspection_Date }}</td>
                                 <td>
                                     <a href="{{ $lot->url }}" target="_blank">
