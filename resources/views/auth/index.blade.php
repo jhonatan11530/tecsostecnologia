@@ -38,29 +38,20 @@
     <!-- Page Wrapper -->
     <div id="root" class="min-h-100vh flex grow bg-slate-50 dark:bg-navy-900" x-cloak>
         <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
-            <a href="#" class="flex items-center space-x-2">
-                <img class="size-12" src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo" />
-                <p
-                class="text-xl font-semibold uppercase text-slate-700 dark:text-navy-100"
-              >
-                Quality Inspections
-              </p>
+            <a href="/" class="flex items-center space-x-2">
+                <img loading="lazy" src="{{ asset('image/Logo Horizontal QIUc.png') }}" alt="logo" width="350">
             </a>
         </div>
         <div class="hidden w-full place-items-center lg:grid">
             <div class="w-full max-w-lg p-6">
-                <img class="w-full"
-                    src="{{ asset('image/dashboard-check.svg') }}" alt="image" />
+                <img class="w-full" src="{{ asset('image/fondo calidad.png') }}" alt="image" loading="lazy" />
             </div>
         </div>
         <main class="flex w-full flex-col items-center bg-white dark:bg-navy-700 lg:max-w-md">
             <div class="flex w-full max-w-sm grow flex-col justify-center p-5">
                 <div class="text-center">
-                    <img loading="lazy"
-                    class="mx-auto size-16 lg:hidden"
-                    src="{{ asset('image/Logotipo QIU Grande.png') }}"
-                    alt="logo"
-                  />
+                    <img loading="lazy" class="mx-auto size-16 lg:hidden"
+                        src="{{ asset('image/Logotipo QIU Grande.png') }}" alt="logo" />
                     <div class="mt-4">
                         <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
                             Bienvenido de nuevo
