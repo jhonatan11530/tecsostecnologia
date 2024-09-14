@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('pass', function (Illuminate\Http\Request $Request) {
+    return response()->json(['status' => 'success', 'new password' => Hash::make($Request->password)], 200);
+});
