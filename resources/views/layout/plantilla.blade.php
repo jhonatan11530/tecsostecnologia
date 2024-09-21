@@ -562,6 +562,7 @@
         window.addEventListener("DOMContentLoaded", () => Alpine.start());
         $(document).ready(function() {
             $('table').DataTable({
+                order:false,
                 scrollX: true,
                 language: {
                     url: "json/datatables/es-ES.json",
