@@ -552,11 +552,7 @@
     <!-- Javascript Assets -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/datatables.min.js') }}"></script>
-        <!-- Moment.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
-<!-- Plugin de DataTables para ordenar fechas -->
-<script src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/datetime-moment.js"></script>
     <script>
         /**
          * THIS SCRIPT REQUIRED FOR PREVENT FLICKERING IN SOME BROWSERS
@@ -566,7 +562,7 @@
 
         window.addEventListener("DOMContentLoaded", () => Alpine.start());
         $(document).ready(function() {
-            $.fn.dataTable.moment('M/D/YYYY'); 
+
             $('table').DataTable({
                 order: false,
                 scrollX: true,
