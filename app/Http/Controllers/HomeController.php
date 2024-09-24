@@ -10,7 +10,6 @@ class HomeController extends Controller
     {
         $lots = Lots::join('customers','lots.customerCode','customers.code')
         ->select('lots.Lot_No','customers.name','lots.AWB','lots.Carrier','lots.Supplier','lots.country','lots.Inspection_Date','lots.url')
-        ->orderBy('lots.Inspection_Date','desc')
         ->get();
         return view('dashboard.index',compact('lots'));
     }
