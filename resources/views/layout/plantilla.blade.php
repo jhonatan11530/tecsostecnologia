@@ -552,6 +552,7 @@
     <!-- Javascript Assets -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/datatables.min.js') }}"></script>
+
     <script>
         /**
          * THIS SCRIPT REQUIRED FOR PREVENT FLICKERING IN SOME BROWSERS
@@ -561,12 +562,17 @@
 
         window.addEventListener("DOMContentLoaded", () => Alpine.start());
         $(document).ready(function() {
+
             $('table').DataTable({
-                order:false,
+                order: false,
                 scrollX: true,
                 language: {
                     url: "json/datatables/es-ES.json",
                 },
+                columnDefs: [{
+                    "targets": 6, // El índice de la columna de la fecha
+                    "type": "date" // Indica que esta columna es de tipo fecha
+                }],
             });
         });
     </script>
