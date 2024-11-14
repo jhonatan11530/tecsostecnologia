@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lots;
-use Illuminate\Http\Request;
-use Carbon\Carbon;
 class HomeController extends Controller
 {
     function dashboard()
