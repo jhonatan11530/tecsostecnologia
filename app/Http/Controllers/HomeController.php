@@ -11,7 +11,7 @@ class HomeController extends Controller
     {
         $lots = Lots::join('customers','lots.customerCode','customers.code')
         ->select('lots.Lot_No','customers.name','lots.AWB','lots.Carrier','lots.Supplier','lots.country','lots.Inspection_Date','lots.url')
-        ->where('lots.Inspection_Date', '>=', Carbon::now()->subMonth())
+        ->orderBy('lots.created_at', 'desc')
         ->get();
         return view('dashboard.index',compact('lots'));
     }
